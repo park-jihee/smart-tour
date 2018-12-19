@@ -1,0 +1,28 @@
+
+.container{
+    width: 1200px;
+    margin: 0 auto;
+    position: relative;
+}
+table{
+    margin-top: 30px;
+    text-align: center;
+}
+th{
+    color: white;
+    font-size: 25px;
+    font-weight: inherit;
+}
+td{
+    line-height: 175px;
+    font-size: 18px;
+    color: teal;
+}
+select{
+    margin-right: 15px;
+}
+
+.input-box{
+    position: absolute;
+    right: 1.3%;
+}

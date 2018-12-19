@@ -1,0 +1,62 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+	<meta charset="UTF-8">
+	<title>관광정보</title>
+	<link rel="stylesheet" href="https://stackpath.bootstrapcdn.com/bootstrap/4.1.3/css/bootstrap.min.css" integrity="sha384-MCw98/SFnGE8fJT3GXwEOngsV7Zt27NXFoaoApmYm81iuXoPkFOJwJ8ERdknLPMO" crossorigin="anonymous">
+	<link rel="stylesheet" href="https://use.fontawesome.com/releases/v5.5.0/css/all.css" integrity="sha384-B4dIYHKNBt8Bc12p+WXckhzcICo0wtJAoU8YZTY5qE0Id1GSseTk6S+L3BlXeVIU" crossorigin="anonymous">
+	<link rel="stylesheet" href="http://code.jquery.com/ui/1.12.1/themes/start/jquery-ui.css">
+	<link href="https://fonts.googleapis.com/css?family=Sunflower:300" rel="stylesheet">
+	<link rel="stylesheet" href="css/style.css">
+	<script src="http://code.jquery.com/jquery-1.12.1.min.js"></script>
+	<script src="http://code.jquery.com/ui/1.11.4/jquery-ui.min.js"></script>\
+	<script src="./js/script.js"></script>
+</head>
+
+<body>
+	<div class="container">
+		<div class="jumbotron text-center">
+			<h1>한국관광지정보</h1>
+		</div>
+		<div class="main">
+			<form onsubmit="return false;" class="form-inline">
+				<select name="areaCode" id="areaCode" class="form-control">
+					<option value="">지역선택</option>
+				</select>
+				<select name="sigunguCode" id="sigunguCode" class="form-control">
+					<option value="">시군구선택</option>
+				</select>
+				<div class="input-box">
+					<input type="text" class="form-control" placeholder="검색" style="width:250px;" id="search">
+				</div>
+			</form>
+		</div>
+		<div class="list">
+			<table class="table">
+				<thead class="thead-info">
+					<tr class="bg-info">
+						<th>사진</th>
+						<th>관광지명</th>
+						<th>주소</th>
+					</tr>
+				</thead>
+				<tbody class="tbody">
+					
+				</tbody>
+			</table>
+		</div>
+	</div>
+
+	<!-- 팝업창 -->
+	<div id="pop" style="display: none;">
+		<h2 id="detail-title" class="detail-info"></h2>
+		<p>주소: <span id="detail-addr" class="detail-info"></span></p>
+		<p>전화: <span id="detail-tel" class="detail-info"></span></p>
+		<p>설명: <span id="detail-overview" class="detail-info"></span></p>
+		<p><img id="detail-pic" src="" class="detail-img" style="width: 100%;"></p>
+		<p><button type="button" id="detail-btn" class="btn btn-outline-info btn-lg btn-block">위치검색</button></p>
+	</div>
+</body>
+
+</html>
